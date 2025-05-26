@@ -1,0 +1,61 @@
+import { group } from "console";
+
+//B1
+const car = {
+  make: "toyota",
+  model: "Corolla",
+  year: "2021",
+};
+console.log("năm sản xuất của xe là:", car.year);
+
+//B2
+const person = {
+  name: "Mạnh Sỹ",
+  address: {
+    street: 123,
+    city: "abcd",
+    country: "ac65325",
+  },
+};
+console.log("tên đường là:", person["address"]["street"]);
+
+//B3
+const student = {
+  name: "Mạnh Sỹ",
+  grades: {
+    math: 10,
+    english: 8,
+  },
+};
+console.log("điểm môn toán là:", student["grades"]["math"]);
+
+//B4
+const settings = {
+  volume: 23,
+  brightness: "adnfkj",
+};
+settings.volume = 22;
+console.log(settings);
+
+//B5
+const bike = {};
+console.log(bike);
+bike.color = "trắng";
+bike["color"] = "bạc";
+console.log(bike);
+
+//B6
+const employee = {
+  name: "Huệ Vũ",
+  age: 25,
+};
+console.log(employee);
+delete employee["age"];
+console.log(employee);
+
+//B7
+const school = {
+  classA: ["An, Bình, Châu"],
+  classB: ["Đào, Hương, Giang"],
+};
+console.log(school);
