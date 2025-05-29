@@ -18,7 +18,6 @@ function sum(a, b) {
 }
 let total = sum(5, 6);
 console.log(total);
-
 const studenArr = [
   "Huệ",
   "Thơm",
