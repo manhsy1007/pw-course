@@ -1,6 +1,8 @@
 // trim(): loại bỏ space ở đầu và cuối của string
 let str ="   hello K14 class";
 console.log(str.trim());
+// xoá khoảng trắng ở đầu sử dụng trimStart()
+// xoá khoảng trắng ở cuối sử dụng trimEnd()
 
 // toLowerCase(): chuyển tất cả các ký tự sang ký tự thường
 console.log(str.toLowerCase());

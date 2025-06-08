@@ -19,7 +19,13 @@ for (let property in student){
     //key: là tên (tên thuộc tính) của mỗi thuộc tính trong object (kiểu string).
 //object[key]: giá trị tương ứng với key đó.
     console.log(property);
-    console.log(student[property])// lấy thuộc tính và giá trị của thuộc tính trong object
+    console.log(student[property])// lấy giá trị của thuộc tính trong object
+}
+
+let arr = [10, 20, 30];
+for (let i in arr) {
+    console.log(i);// lấy chỉ số của phần tử
+    console.log(arr[i]); //lấy giá trị của phần tử
 }
 
 /*
@@ -37,7 +43,7 @@ fruits.forEach((value, index) =>{
 /*
 - for... of sẽ dùng để lặp các giá trị trong mảng /string
 -  cú pháp:
-for (let i in object){
+for (let i of object){
 //code here
 }
 */
@@ -48,4 +54,9 @@ for( let fruit of fruits){
 let string1 = 'banana';
 for(let char of string1){
     console.log(char);
+}
+// string.length để lấy độ dài của chuỗi và lấy ra từng phần tử 1 theo index
+const str ="k14 2024";
+for (let i =0; i<str.length; i++){
+    console.log(str[i]);
 }
