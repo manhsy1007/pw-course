@@ -39,3 +39,14 @@ console.log(thom);
 
 // sort(): sắp xếp các phần tử trong mảng theo từ điển Unicode, chuyển từng phần tử về dạng chuỗi, sau đó so sánh chuỗi rồi mới sắp xếp
 console.log(thom.sort());
+
+// pop(): xoá và trả về phần tử cuối cùng của mảng, làm thay đổi mảng gốc
+let arr5 = [1,2,3];
+let last = arr5.pop();
+console.log(arr5);//[1,2]
+console.log(last);//3
+
+// unshift(): thêm 1 hoặc nhiều phần tử vào đầu mảng, trả về độ dài mới của mảng, làm thay đổi mảng gốc
+let arr6 = [1,2,3];
+arr.unshift(0); //[0,1,2,3]
+console.log(arr6);
