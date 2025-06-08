@@ -33,5 +33,5 @@ await page.locator('//select[@id = "profile"]').setInputFiles("tests\lesson-2\ke
 
     await test.step('tên step2', async () =>{
 
-    });
+    })
 });
