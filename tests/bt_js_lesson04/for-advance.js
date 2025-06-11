@@ -1,5 +1,5 @@
 /*
-- for... in sẽ dùng để lặp các thuộc tính trong 1 object
+- for... in sẽ dùng để lặp các thuộc tính (keys) trong 1 object
 -  cú pháp:
 for (let i in object){
 //code here
@@ -18,7 +18,7 @@ for (let property in student){
     // code sử dụng key hoặc object[key]
     //key: là tên (tên thuộc tính) của mỗi thuộc tính trong object (kiểu string).
 //object[key]: giá trị tương ứng với key đó.
-    console.log(property);
+    console.log(property);// lấy thuộc tính (keys) trong object
     console.log(student[property])// lấy giá trị của thuộc tính trong object
 }
 
@@ -29,9 +29,13 @@ for (let i in arr) {
 }
 
 /*
-- forEach là 1 hàm được hỗ trợ để dùng cho mảng
+- forEach là 1 hàm được hỗ trợ để dùng cho mảng, dùng để duyệt qua từng phần tử trong mảng, không tạo ra mảng mới
+- dùng khi không cần lấy thứ tự của các phần tử trong mảng
 - Cú pháp:
 arr.forEach((value, index))=>{
+value: giá trị tại mỗi phần tử trong mảng
+index: vị trí của phần tử đó trong mảng
+array (tùy chọn): chính mảng đang lặp
 //code here
 })
 */
@@ -42,6 +46,7 @@ fruits.forEach((value, index) =>{
 
 /*
 - for... of sẽ dùng để lặp các giá trị trong mảng /string
+- dùng khi không cần quan tâm đến chỉ số của từng phần tử
 -  cú pháp:
 for (let i of object){
 //code here

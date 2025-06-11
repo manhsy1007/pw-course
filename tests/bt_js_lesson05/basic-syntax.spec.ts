@@ -6,7 +6,7 @@ test("tên test case", async ({ page})=> {
 await page.goto("https://material.playwrightvn.com/");
     
 // click()
-await page.locator(' //a[contains(text(), "bài học 1: register page")]').click({clickCount: 5, button:"right",modifiers: ["Control", "Alt"]});
+await page.locator(' //a[contains(text(), "Bài học 1: Register Page")]').click({clickCount: 5, button:"right",modifiers: ["Control", "Alt"]});
 
 // input()
 await page.locator('//input[@id="username"]').fill("K14 playwright");
