@@ -80,6 +80,10 @@ console.log(lastTwo); // [40, 50]
 const middle = arr4.slice(-4, -1); // Tính từ phần tử thứ 4 từ cuối đến phần tử thứ 1 từ cuối (không bao gồm -1)
 console.log(middle); // [20, 30, 40]
 
+// match(): là hàm dùng để tìm kiếm chuỗi con phù hợp với regex(biểu thức chính quy)
+//Dùng để lọc hoặc xử lý riêng các ký tự là chữ cái, bỏ qua số, khoảng trắng, ký hiệu.
+console.log("A".match(/[a-zA-Z]/));  // ✅ ['A']
+console.log("1".match(/[a-zA-Z]/));  // ❌ null
 
 // split(): sử dụng để chia 1 chuỗi thành 1 mảng các chuỗi con
 const str3 = "Xin chào thế giới";
@@ -91,7 +95,7 @@ const numbers = [1, 2, 3, 4, 5];
 numbers.reverse();
 console.log(numbers); // Output: [5, 4, 3, 2, 1]
 
-// join(): sử dụng để nối các phần tử của mảng thành 1 chuỗi string
+// join(): sử dụng để nối các phần tử của mảng thành 1 chuỗi string và ngăn cách nhau bởi dấu phân cách tương ứng
 const fruits = ['Apple', 'Banana', 'Cherry'];
 const result1 = fruits.join(' - ');
 console.log(result1); // Output: "Apple - Banana - Cherry"
@@ -127,4 +131,9 @@ const person = {
 };
 const keys = Object.keys(person);
 console.log(keys); 
+
+// Typeof: được dùng để kiểm tra kiểu dữ liệu (data type) của một giá trị, cú pháp: typeof(<giá_trị>)
+console.log(typeof 123);           // "number"
+console.log(typeof "Hello");       // "string"
+console.log(typeof true);          // "boolean"
 

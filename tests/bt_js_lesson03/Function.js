@@ -1,7 +1,9 @@
+// hàm định danh namefunction
+// function tenHam(thamSo){ // thân hàm }
 function helloworld() {
   console.log("hello world!");
 }
-helloworld; // gọi hàm
+helloworld(); // gọi hàm và thực thi nội dung bên trong hàm
 
 function studentName(student) {
   console.log(`tên học viên: ${student}`);
@@ -18,6 +20,7 @@ function sum(a, b) {
 }
 let total = sum(5, 6);
 console.log(total);
+
 const studenArr = [
   "Huệ",
   "Thơm",

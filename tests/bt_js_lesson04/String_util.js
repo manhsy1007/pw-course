@@ -15,6 +15,9 @@ console.log(str.includes("glass"));
 
 // replace(): thay thế 1 chuỗi con bằng 1 chuỗi khác trong chuỗi ban đầu
 //có thể thay thế các string hoặc substring bằng cách sử dụng regex
+// / /g: thay tất cả ký tự " " trong chuỗi.
+// \s: là khoảng trắng (space, tab, xuống dòng...). 
+// g: là global flag – áp dụng cho toàn chuỗi, không chỉ lần đầu.
 str = str.replace("K14", "K15");
 console.log(str);
 
@@ -27,6 +30,7 @@ console.log(words);
 String([1, 2, 3]);      // 👉 "1,2,3"
 
 // tostring(): phương thức của đối tượng, Chỉ dùng được với object, số, mảng để chuyển chúng thành chuỗi
+// có thể sử dụng phương thức toString() để chuyển đổi 1 số thập phân sang hệ thập lục phân
 const numbers = [1, 2, 3, 4, 5];
 // Dùng String()
 const strings = numbers.map(num => String(num));

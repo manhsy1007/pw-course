@@ -1,7 +1,12 @@
 //
 /*
+- Viết hàm ngắn gọn, đặc biệt trong các hàm callback như map, filter, forEach.
 - Cú pháp: (parameters) => {
     //code
+    }
+
+- const tenBien = (thamSo) => {
+    // thân hàm
     }
 */
 
