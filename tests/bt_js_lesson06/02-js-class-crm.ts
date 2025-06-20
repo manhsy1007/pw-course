@@ -13,9 +13,11 @@ class Customer {
         console.log(`Thông tin khách hàng: ${this.id}, ${this.name}, ${this.email}, ${this.phone}`);
     }
     updateEmail(newEmail){
-        console.log(`${newEmail}`);
+this.email = newEmail;
+        
     }
 }
 const khachhang = new Customer(1, "sỹ", "sy@gmail.com",112 );
 khachhang.disolayInfo();
 khachhang.updateEmail("sy123@getMaxListeners.com");
+khachhang.disolayInfo();
