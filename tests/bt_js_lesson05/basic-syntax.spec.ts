@@ -55,7 +55,7 @@ page.on('dialog', async dialog =>{
     console.log("Hộp thoại hiện ra:", dialog.message());// in ra tiêu đề dialog
     dialog.accept();
 })
-// phải đăng ký xuất hiện dialog trước hành động có khả năng gây ra dialog, để khi mà hộp thoại bật raPlaywright đã biết xử lý nó như thế nào.
+// phải đăng ký xuất hiện dialog trước hành động có khả năng gây ra dialog, để khi mà hộp thoại bật ra Playwright đã biết xử lý nó như thế nào.
 
 await page.click('//*[text()="Delete"]');
 

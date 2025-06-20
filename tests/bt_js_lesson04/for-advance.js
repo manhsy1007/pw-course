@@ -34,7 +34,7 @@ for (let i in arr) {
 - Cú pháp:
 arr.forEach((value, index))=>{
 value: giá trị tại mỗi phần tử trong mảng
-index: vị trí của phần tử đó trong mảng
+index: vị trí, chỉ số của phần tử đó trong mảng
 array (tùy chọn): chính mảng đang lặp
 //code here
 })
