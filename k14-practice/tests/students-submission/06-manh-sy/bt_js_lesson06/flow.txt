@@ -1,0 +1,7 @@
+1. Clone repo về máy cá nhân
+2. Trước khi làm bt:
+- Pull code mới nhất từ main
+- Tạo nhánh mới
+- Làm bài trên folder của bản thân
+- Tạo pull request (Add reviewer)
+3. Turn in bài tập trên gg class
