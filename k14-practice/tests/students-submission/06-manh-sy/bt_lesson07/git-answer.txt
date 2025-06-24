@@ -1,0 +1,8 @@
+- git stash: lưu các công việc đang làm vào 1 vùng nhớ tạm
+- unstash: lấy các công việc trong vùng nhớ tạm ra 
+- git stash pop: lấy các công việc trong vùng nhớ tạm ra và bỏ đi vùng nhớ tạm
+- git stash apply: lấy các công việc trong vùng nhớ tạm ra nhưng không bỏ đi vùng nhớ tạm
+- git stash list: liệt kê các vùng nhớ tạm
+- git stash drop: xóa vùng nhớ tạm
+- git stash clear: xóa tất cả vùng nhớ tạm
+- git stash show: xem các công việc trong vùng nhớ 
