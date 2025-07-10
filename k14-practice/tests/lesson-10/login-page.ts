@@ -1,5 +1,6 @@
 import { Page } from "playwright";
 import { BasePage } from "./base-page";
+import { DashboardPage } from "./dashboard-page";
 
 export class LoginPage extends BasePage {
     xpathUserName = "//input[@id='user_login']";
@@ -22,8 +23,9 @@ export class LoginPage extends BasePage {
     };
 
     // click btn login
-    async clickBtnLogin(): Promise<void>{
+    async clickBtnLogin(): Promise<DashboardPage>{
         await this.page.locator(this.xpathBtnLogIn).click();
+        return new DashboardPage(this.page); 
     };
 
     /**

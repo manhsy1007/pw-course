@@ -2,10 +2,24 @@ preceding
 1. Ví dụ 1: 
 <div id="preceding1-1">Nội dung trước 1-1</div>
 <div id="preceding1-2">Nội dung trước 1-2</div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<div id="wrapper1">
+>>>>>>> 14b181b (feat: Lesson 7 - Exercise Xpath)
+=======
+>>>>>>> 86087d1 (fix: Lesson 7 - Fix exercise preceding and ancestor-or-self)
 
 2. Ví dụ 2: 
 <div id="preceding2-1">Nội dung trước 2-1</div>
 <div id="preceding2-2">Nội dung trước 2-2</div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<div id="wrapper2">
+>>>>>>> 14b181b (feat: Lesson 7 - Exercise Xpath)
+=======
+>>>>>>> 86087d1 (fix: Lesson 7 - Fix exercise preceding and ancestor-or-self)
 
 3. Ví dụ 3: 
 <span id="preceding3-1">Nội dung trước 3-1</span>

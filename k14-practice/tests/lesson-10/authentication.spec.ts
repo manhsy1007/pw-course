@@ -42,7 +42,7 @@ test.describe("AUTH - Authentication", async () => {
 
         await test.step("Click btn Login", async () => {
             // Click button Login
-            await loginPage.clickBtnLogin();
+            dashboardPage = await loginPage.clickBtnLogin();
 
             // Verify error msg
             const expectedMsgError = `Error: The username ${invalidUserCredential.userName} is not registered on this site. If you are unsure of your username, try your email address instead.`

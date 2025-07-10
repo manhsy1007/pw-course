@@ -22,7 +22,23 @@ ancestor-or-self
 <div id="great-grandparent2">
     <div id="grandparent2">
         <div id="parent2">
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 3. Ví dụ 3: 
 <div id="grandparent3">
     <div id="parent3">
+=======
+            <span id="child2">Nội dung 2</span>
+
+3. Ví dụ 3: 
+<div id="grandparent3">
+    <div id="parent3">
+        <p id="child3">Nội dung 3</p>
+>>>>>>> 14b181b (feat: Lesson 7 - Exercise Xpath)
+=======
+
+3. Ví dụ 3: 
+<div id="grandparent3">
+    <div id="parent3">
+>>>>>>> 86087d1 (fix: Lesson 7 - Fix exercise preceding and ancestor-or-self)

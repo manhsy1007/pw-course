@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test.describe("API Testing", () => {
+test.describe.serial("API Testing", () => {
   const baseURL = "https://conduit-api.bondaracademy.com/api";
   const now = new Date().getTime();
   let articleSlug = "";
@@ -142,6 +142,7 @@ test.describe("API Testing", () => {
       const article = detailResponseBody.article;
       article.description = `How to use Playwright to create article and update article ${now}`;
       article.title = `API in Playwright - updated ${now}`;
+      console.log(article);
       const updateArticleResponse = await request.put(
         baseURL + endpointArticle,
         {

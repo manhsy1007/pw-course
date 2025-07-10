@@ -14,7 +14,13 @@
       test('Test 1', async ({ page }) => { /* code... */ });
       test('Test 2', async ({ page }) => { /* code... */ });
   });
+HEAD
+HEAD
+
 -
+ ff4e5c9 (Add key takeaway for Lesson 8)
+
+ e904d57 (feat: Add lesson 8 homework)
 Lợi ích: Nhóm test case lại để dễ quản lý.
 
 ## 3. Test Hooks
