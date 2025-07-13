@@ -30,3 +30,16 @@ const studenArr = [
     //gọi hàm
     studentName(studenArr[i])
   }
+
+// tạo tên ngẫu nhiên
+function generateNameFromList() {
+  const names = ['Manh', 'Sy', 'Linh', 'Hoa', 'Minh', 'Tuan', 'Thơm', 'Huệ'];
+  const lastNames = ['Nguyen', 'Tran', 'Le', 'Pham', 'Hoang', 'Trần', 'Vũ'];
+  
+  const first = names[Math.floor(Math.random() * names.length)];
+  const last = lastNames[Math.floor(Math.random() * lastNames.length)];
+
+  return [`${first} ${last}`, `${first}-${last}`];
+}
+const [tagname, tagname1] = generateNameFromList();
+

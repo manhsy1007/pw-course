@@ -1,0 +1,9 @@
+1.a, git rebase main:
+- lệnh này di chuyển các commit của nhánh hiện tại lên commit mới nhất của nhánh main
+b, git merge feature/A:
+- lệnh này gộp/merge các thay đổi từ nhánh feature/A vào nhánh hiện tại ta đang đứng
+c, merge strategy:
+- fast-foward: là một kiểu merge trong Git mà không tạo ra commit merge, vì Git chỉ cần "di chuyển con trỏ" của nhánh đích tiến tới commit mới nhất của nhánh bạn đang merge.
+Nó chỉ xảy ra khi nhánh đích không có commit nào mới kể từ lúc nhánh được tách ra.di chuyển con trỏ 
+- three way merge:  tạo ra 1 commit merge mới, với những thay đổi của nhánh đích và nhánh bạn đang merge.
+Nó chỉ xảy ra khi cả 2 nhánh đều có commit mới
