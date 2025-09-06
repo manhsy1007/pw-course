@@ -65,3 +65,11 @@ const obj = {
 }; 
 const obj2 = Object.values(obj);
 console.log(obj2);
+
+// Object.fromEntries(): chuyển đổi dữ liệu giữa array ->  object
+// Object.fromEntries(): là ngược lại của Object.entries() chuyểm từ object -> array
+// Dữ liệu dạng mảng các cặp key-value
+const entries = [['name', 'Teo'], ['role', 'QA'], ['department', 'Testing']];
+// Chuyển thành object
+const userObject = Object.fromEntries(entries);
+console.log(userObject); // { name: 'Teo', role: 'QA', department: 'Testing' }

@@ -47,6 +47,7 @@ fruits.forEach((value, index) =>{
 /*
 - for... of sẽ dùng để lặp các giá trị trong mảng /string
 - dùng khi không cần quan tâm đến chỉ số của từng phần tử
+- dùng duyệt qua giá trị trong 1 object
 -  cú pháp:
 for (let i of object){
 //code here

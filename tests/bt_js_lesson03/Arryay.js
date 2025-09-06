@@ -6,7 +6,7 @@ const studenArr = [
   17,
   23,
   { student: { age: 18 } },
-];// trong mảng có thể chứa các ký tự và object
+];// trong mảng có thể chứa các ký tự và object, mảng chứa mảng
 console.log(studenArr);
 // độ dài của mảng
 const count = studenArr.length;
@@ -24,3 +24,12 @@ let studentlist = [
     {name: "huệ", score:18},
     {name: "thơm", score:19},
 ];
+
+const fruits = ["apple", "banana", "mango"];
+// Cách thường
+const f1 = fruits[0];
+const f2 = fruits[1];
+// Dùng destructuring
+const [first, second] = fruits;
+console.log(first);  // apple
+console.log(second); // banana

@@ -21,7 +21,7 @@ console.log(student)
 console.log(hue)
 
 /* dấu [] được sử dụng khi tên biến trong oject được đặt có dấu cách, vd: nam student
-lúc đó thì mình không thể dùng dấu . để trỏ đến biến được vì có dấu cách ở giữ tên biến, nên TH đấy sẽ phải dùng []*/
+lúc đó thì mình không thể dùng dấu . để trỏ đến biến được vì có dấu cách ở giữa tên biến, nên TH đấy sẽ phải dùng [] */
 
 /* đối với oject có kiểu dl là const thì có thể gán lại giá trị trong oject được
 Nhưng không được thêm thuộc tính trong oject có kiểu dl là const
@@ -54,3 +54,12 @@ delete employee.age;
 console.log(employee);
 Kết quả:
 {name: 'Le Van C', department: 'HR'}*/
+
+const user = { name: "Nam", age: 25, email: "nam@test.com" };
+
+// Cách thường
+let username = user.name;
+// Dùng destructuring
+const { name, email } = user;
+console.log(name);  // Nam
+console.log(email); // nam@test.com

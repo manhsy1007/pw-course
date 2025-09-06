@@ -6,6 +6,7 @@ let username: string = 'Playwright Viet Nam';
 let email: string = 'playwrightvietnam@gmail.com';
 let description: string = 'Đây là lớp Playwright K11';
 let hobby: "reading" | "traveling" | "cooking" = 'cooking';
+//let hobby1: ("reading" | "traveling" | "cooking")[] = ["cooking", "reading"]; checkbox chọn nhiều giá trị thì đổi thành mảng
 let gender: 'Male' | 'Female' = 'Female'
 let filePath: string = 'data/dog-look.jpg';
 let country: "usa" | "canada" | "uk" | "australia" = 'usa';
@@ -19,7 +20,7 @@ test('Exercise 1: Register Page', async ({ page }) => {
     })
 
     await test.step('Nhập đầy đủ các thông tin, click button register', async () => {
-        // fill info
+       // fill info
         await registerPage.fillUsername(username);
         await registerPage.fillEmail(email);
         await registerPage.checkGender(gender);
@@ -33,7 +34,8 @@ test('Exercise 1: Register Page', async ({ page }) => {
 
         // click button register
         await registerPage.clickBtnRegister();
-    })
+    }) 
+  // await registerPage.fillFormRegister( { username: username, email: email, gender: gender, hobby: hobby, interestValue: interest, countryValue: country, date: date, filePath: filePath, bio: description });
 
     await test.step('Kiểm tra nội dung đã đăng kí ở bảng là đúng', async () => {
         const userInfo = await registerPage.getInfoNewestInTable();

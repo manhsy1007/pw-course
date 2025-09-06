@@ -23,7 +23,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-reporter: [['html', { outputFolder: 'test-results', open: 'never' }]],
+reporter: [['html', { outputFolder: 'test-results', open: 'always' }]],
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -33,7 +33,13 @@ reporter: [['html', { outputFolder: 'test-results', open: 'never' }]],
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure',
+     launchOptions: {
+      slowMo: 200    // (optional) chạy chậm lại cho dễ quan sát
+    },
+    screenshot: 'only-on-failure', //chỉ bật trace khi test fail và retry lần đầu tiên.
+  video: 'retain-on-failure',//chỉ giữ trace nếu test fail (nếu pass thì xóa).
+
   
   },
 

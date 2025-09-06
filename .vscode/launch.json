@@ -1,0 +1,7 @@
+{
+  "type": "node",
+  "request": "launch",
+  "name": "Debug Playwright Tests",
+  "command": "npx playwright test --debug",
+  "console": "integratedTerminal"
+}

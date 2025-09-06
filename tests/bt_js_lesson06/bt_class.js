@@ -35,11 +35,11 @@ sum(a,b){
 }
 }
 const TrucMai = new K14StudentPlaywright("trúc mai", 23, "BA");// giá trị truyền vào this.name
-// không dùng hàm khởi tạo
-//TrucMai.name = "trúc mai";
-//TrucMai.age = 23;
-//TrucMai.job_title = "BA";
+/* không dùng hàm khởi tạo
+TrucMai.name = "trúc mai";
+TrucMai.age = 23;
+TrucMai.job_title = "BA";*/
 console.log(TrucMai);
 TrucMai.doExercise();
-const sy1 = TrucMai.sum(6,8);
+const sy1 = TrucMai.sum(6,8);// khi hover chuột vào sum, sẽ hiển thị a: any và b: any là do a và b mình chưa khai báo kiểu dữ liệu
 console.log(sy1);

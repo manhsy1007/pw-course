@@ -9,6 +9,8 @@
     // thân hàm
     }
 */
+// Arrow function
+const add = (a, b) => a + b;
 
 // Hàm có nhiều tham số
 let sum = (a,b) =>{

@@ -137,3 +137,10 @@ console.log(typeof 123);           // "number"
 console.log(typeof "Hello");       // "string"
 console.log(typeof true);          // "boolean"
 
+// Object.fromEntries(): chuyển đổi dữ liệu giữa array ->  object
+// Object.fromEntries(): là ngược lại của Object.entries() chuyểm từ object -> array
+// Dữ liệu dạng mảng các cặp key-value
+const entries = [['name', 'Teo'], ['role', 'QA'], ['department', 'Testing']];
+// Chuyển thành object
+const userObject = Object.fromEntries(entries);
+console.log(userObject); // { name: 'Teo', role: 'QA', department: 'Testing' }

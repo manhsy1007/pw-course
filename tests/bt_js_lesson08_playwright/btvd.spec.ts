@@ -6,6 +6,7 @@ test.describe("AUTH - Authentication", async () => {
 // Data test: nếu có 1 test group thì đặt biến ở đâu cũng được, nếu có nhiều test group thì đặt biến ở trong test group nào cần sử dụng vì phải phụ thuộc vào phạm vi hoạt động của biến
 // 1 test group chỉ chạy 1 lần, 
 // nếu cho vào trong beforeAll, thì do phạm vi hoạt động của biến thì mình cần phải khai báo biến trước bên ngoài rồi trong beforeAll chỉ khởi tạo giá trị thôi
+// nếu data đặt ngoài test desctibe thì testData được định nghĩa ở file scope (toàn cục trong file).Tất cả describe và test trong file đó đều có thể truy cập được.Phù hợp khi data cần dùng chung cho nhiều describe trong cùng file
 const invalidUserCredential = {
   userName: "K14-class",
   password: "wrong password"

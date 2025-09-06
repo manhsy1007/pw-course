@@ -1,5 +1,6 @@
 // hàm định danh namefunction
 // function tenHam(thamSo){ // thân hàm }
+// tham số trong hàm ngoài biến ra có thể là object hoặc mảng
 function helloworld() {
   console.log("hello world!");
 }
@@ -42,4 +43,5 @@ function generateNameFromList() {
   return [`${first} ${last}`, `${first}-${last}`];
 }
 const [tagname, tagname1] = generateNameFromList();
-
+console.log(tagname);
+console.log(tagname1);  
